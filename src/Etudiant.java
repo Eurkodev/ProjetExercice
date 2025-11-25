@@ -4,12 +4,12 @@ import java.util.List;
 import java.util.Map;
 
 public class Etudiant {
-    String nom;
-    byte age;
-    byte noteMoyenne;
+    private String nom;
+    private int age;
+    private int noteMoyenne;
     List<Object> listeEtudiants;
 
-    public Etudiant(String nom, byte age, byte noteMoyenne) {
+    public Etudiant(String nom, int age, int noteMoyenne) {
         this.nom = nom;
         this.age = age;
         this.noteMoyenne = noteMoyenne;
@@ -19,7 +19,7 @@ public class Etudiant {
     public String getNom() {
         return this.nom;
     }
-    public byte getAge() {
+    public int getAge() {
         return this.age;
     }
 
@@ -27,11 +27,11 @@ public class Etudiant {
         this.nom = nom;
     }
 
-    public void setAge(byte age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public void setNoteMoyenne(byte noteMoyenne) {
+    public void setNoteMoyenne(int noteMoyenne) {
         this.noteMoyenne = noteMoyenne;
 
     }
