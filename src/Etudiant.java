@@ -8,13 +8,13 @@ public class Etudiant {
     private String nom;
     private int age;
     private int noteMoyenne;
-    List<Object> listeEtudiants;
+    List<Object> listEtudiants;
 
     public Etudiant(String nom, int age, int noteMoyenne) {
         this.nom = nom;
         this.age = age;
         this.noteMoyenne = noteMoyenne;
-        listeEtudiants = new ArrayList<>();
+        listEtudiants = new ArrayList<>();
     }
 
     public String getNom() {
@@ -44,5 +44,7 @@ public class Etudiant {
     }
 
 
-
+    public int getNoteMoyenne() {
+        return this.noteMoyenne;
+    }
 }
