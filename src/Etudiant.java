@@ -4,9 +4,10 @@ import java.util.List;
 import java.util.Map;
 
 public class Etudiant {
-    String nom;
-    int age;
-    int noteMoyenne;
+
+    private String nom;
+    private int age;
+    private int noteMoyenne;
     List<Object> listeEtudiants;
 
     public Etudiant(String nom, int age, int noteMoyenne) {
@@ -27,11 +28,11 @@ public class Etudiant {
         this.nom = nom;
     }
 
-    public void setAge(byte age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public void setNoteMoyenne(byte noteMoyenne) {
+    public void setNoteMoyenne(int noteMoyenne) {
         this.noteMoyenne = noteMoyenne;
 
     }
