@@ -8,6 +8,7 @@ import java.util.*;
 import java.lang.String;
 import static java.util.Collection.*;
 
+
 public class Bonjour {
     public static void main(String[] args) {
 
