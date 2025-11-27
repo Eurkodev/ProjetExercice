@@ -1,9 +1,6 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-public class Etudiant {
+public class Etudiant implements Comparable<Etudiant> {
 
     private String nom;
     private int age;
@@ -47,4 +44,11 @@ public class Etudiant {
     public int getNoteMoyenne() {
         return this.noteMoyenne;
     }
+
+    @Override
+    public int compareTo(Etudiant etudiant) {
+        return Integer.compare(etudiant.getNoteMoyenne(), this.getNoteMoyenne());
+    }
+
+
 }
